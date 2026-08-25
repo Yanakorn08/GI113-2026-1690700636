@@ -80,7 +80,7 @@ namespace Lab02
             Console.WriteLine();
             Console.WriteLine("Kirin takes 60 damage!");
             Console.WriteLine(currentHp = currentHp - 60);
-            Console.WriteLine();                                            
+            Console.WriteLine();
             Console.WriteLine("===== BOSS STATUS: AFTER DAMAGE =====");
             Console.WriteLine();
             Console.WriteLine($"Name: {bossName}");
@@ -139,8 +139,6 @@ namespace Lab02
             Console.WriteLine($"Attack Power: {heroAttackPower4}");
             Console.WriteLine($"Critical Multiplier: {heroCritMultiplier4}");
             Console.WriteLine($"Is Hero: {isHero4}");
-            Console.WriteLine();
-
         }
     }
 }
