@@ -1,7 +1,7 @@
 /*
  * Student ID : 1690700636
- * Name       : 
- * Section    :
+ * Name       : Yanakorn Rodclom
+ * Section    : 129A
  * No.        :
  * Course     : GI113 Computer Programming (GI)
  */
