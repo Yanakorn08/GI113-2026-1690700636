@@ -44,6 +44,7 @@
             Console.WriteLine($"Critical Multiplier (int cast): {critCast}");
             Console.WriteLine($"Critical Multiplier (Convert.ToInt32): {critConvert}");
             Console.WriteLine();
+
         }
     }
 }
