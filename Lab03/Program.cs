@@ -1,4 +1,12 @@
-﻿namespace Lab03
+﻿/*
+ * Student ID : 1690700636
+ * Name       : Yanakorn Rodclom
+ * Section    : 129A
+ * No.        : 26
+ * Course     : GI113 Computer Programming (GI)
+ */
+
+namespace Lab03
 {
     internal class Program
     {
