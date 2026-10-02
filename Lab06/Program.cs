@@ -50,20 +50,67 @@ namespace Lab06
 
             if (skillChoice == 1)
             {
-                Console.WriteLine($"You Attack the {monsterName}!");
-                Console.WriteLine($"You deal {(heroDamage - monsterDefense)} damage!");
-                Console.WriteLine($"The {monsterName} has {monsterHP - (heroDamage - monsterDefense)} HP left!");
+                Console.WriteLine($"{heroName} Attack the {monsterName}!");
+                Console.WriteLine();
+                if (rollA > monsterRoll)
+                {
+                    Console.WriteLine($"{heroName} Attack roll {rollA}!");
+                    Console.WriteLine($"The {monsterName} Defense roll {monsterRoll}!");
+                    Console.WriteLine();
+                    Console.WriteLine($"You deal {(heroDamage - monsterDefense)} damage!");
+                    Console.WriteLine($"The {monsterName} has {monsterHP - (heroDamage - monsterDefense)} HP left!");
+                }
+                else
+                {
+                    Console.WriteLine($"{heroName} Attack roll {rollA}!");
+                    Console.WriteLine($"The {monsterName} Defense roll {monsterRoll}!");
+                    Console.WriteLine();
+                    Console.WriteLine("You Attack failed!");
+                }
             }
             else if (skillChoice == 2)
             {
-                Console.WriteLine($"You Defend!");
-                Console.WriteLine($"You take {(monsterDamage - heroDefense)} damage!");
-                Console.WriteLine($"{heroName} has {heroHP - (monsterDamage - heroDefense)} HP left!");
+                Console.WriteLine($"{heroName} Defend!");
+                Console.WriteLine();
+                if (rollB > monsterRoll)
+                {
+                    Console.WriteLine($"{heroName} Defend roll {rollB}!");
+                    Console.WriteLine($"The {monsterName} Attack roll {monsterRoll}!");
+                    Console.WriteLine();
+                    Console.WriteLine($"You take {(monsterDamage - heroDefense)} damage!");
+                    Console.WriteLine($"{heroName} has {heroHP - (monsterDamage - heroDefense)} HP left!");
+                }
+                else
+                {
+                    Console.WriteLine($"{heroName} Defend roll {rollB}!");
+                    Console.WriteLine($"The {monsterName} Attack roll {monsterRoll}!");
+                    Console.WriteLine();
+                    Console.WriteLine("The Defense failed!");
+                    Console.WriteLine($"You take {monsterDamage - heroDefense} damage!");
+                    Console.WriteLine($"{heroName} has {heroHP - (monsterDamage - heroDefense)} HP left!");
+                }
             }
             else if (skillChoice == 3)
             {
-                Console.WriteLine($"You try to Escape");
-                Console.WriteLine($"Success! You escaped from the battle!");
+                Console.WriteLine("You try to Escape");
+                Console.WriteLine();
+                if (rollC > monsterRoll)
+                {
+                    Console.WriteLine($"{heroName} Escape roll {rollC}!");
+                    Console.WriteLine($"The {monsterName} Hinder roll {monsterRoll}!");
+                    Console.WriteLine();
+                    Console.WriteLine("You successfully escaped from the battle!");
+                }
+                else
+                {
+                    Console.WriteLine($"{heroName} Escape roll {rollC}!");
+                    Console.WriteLine($"The {monsterName} Hinder roll {monsterRoll}!");
+                    Console.WriteLine();
+                    Console.WriteLine("You failed to escape!");
+                    Console.WriteLine($"The {monsterName} attacks you for {(monsterDamage - heroDefense)} damage!");
+                    Console.WriteLine($"{heroName} has {heroHP - (monsterDamage - heroDefense)} HP left!");
+                }
+                Console.WriteLine("You escaped from the battle!");
             }
             else
             {   
